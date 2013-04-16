@@ -14,6 +14,6 @@
 
 	
 	
-	<%//DB.createPost(String request.getParameter("title"), String request.getParameter("lead_paragraph"), String request.getParameter("content"), int request.getParameter("category"), int request.getParameter("author")) %>
+	<%DB.createPost(request.getParameter("title"), request.getParameter("lead_paragraph"), request.getParameter("content"), request.getParameter("category"), request.getParameter("author")) %>
 </body>
 </html>
