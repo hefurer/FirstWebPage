@@ -11,9 +11,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+ String title = request.getParameter("title");
+ String lead_paragraph = request.getParameter("lead_paragraph");
+ String content = request.getParameter("content");
+ int category_id = request.getParameter("category");
+ int author_id = request.getParameter("author");
 	
 	
-	<%DB.createPost(request.getParameter("title"), request.getParameter("lead_paragraph"), request.getParameter("content"), request.getParameter("category"), request.getParameter("author")); %>
+	<%DB.createPost(title, lead_paragraph, content, category_id, author_id); %>
 </body>
 </html>
