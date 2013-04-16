@@ -16,16 +16,17 @@ Hello, world!
 <%
 
 BlogSystem v = new BlogSystem();
-
-v.blogPosts = DB.getPosts();
-v.authorList = DB.getAuthors(); %>
+v.authorList = DB.getAuthors();
+DB.getPosts(v);
+ %>
 
 
 <%
 for ( Post post : v.blogPosts )
 {
 	%>
-	<h2><%= post.author.id %></h2>
+	<h2><%= post.author.firstName %></h2>
+	
 	<%
 }
 %>
