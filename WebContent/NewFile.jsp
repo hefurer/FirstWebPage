@@ -25,7 +25,7 @@ v.authorList = DB.getAuthors(); %>
 for ( Post post : v.blogPosts )
 {
 	%>
-	<h2><%= post.title %></h2>
+	<h2><%= post.author.id %></h2>
 	<%
 }
 %>
