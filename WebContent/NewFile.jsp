@@ -26,7 +26,7 @@ v.blogPosts = DB.getPosts(v);
 for ( Post post : v.blogPosts )
 {
 	%>
-	<h2><%= post.author.firstName %></h2>
+	<h2><%= post.category.name %></h2>
 	
 	<%
 }
