@@ -17,7 +17,8 @@ Hello, world!
 
 BlogSystem v = new BlogSystem();
 v.authorList = DB.getAuthors();
-DB.getPosts(v);
+v.categoryList = DB.getCategories();
+v.blogPosts = DB.getPosts(v);
  %>
 
 
